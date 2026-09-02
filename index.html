@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skybound Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>Skybound Runner 🚀</h1>
+
+        <div class="game-info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Coins: <span id="coins">0</span></span>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="controls">
+            <p>← → Move | ↑ / W / Space Jump</p>
+            <p>Collect coins and reach the finish!</p>
+        </div>
+
+        <div class="buttons">
+            <button id="restartBtn">Restart</button>
+            <button id="leaderboardBtn">Leaderboard</button>
+        </div>
+
+    </div>
+
+    <div id="leaderboardOverlay" class="overlay">
+
+        <div class="leaderboard">
+
+            <button id="closeLeaderboard" class="closeBtn">×</button>
+
+            <h2>🏆 Leaderboard</h2>
+
+            <ol id="leaderboardList"></ol>
+
+            <button id="clearScoresBtn">Clear Scores</button>
+
+        </div>
+
+    </div>
+
+    <div id="nameOverlay" class="overlay">
+
+        <div class="nameBox">
+
+            <h2>🎉 Level Complete!</h2>
+
+            <p>Your Score: <span id="finalScore">0</span></p>
+
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Enter your name"
+                maxlength="15"
+            >
+
+            <button id="saveScoreBtn">Save Score</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
